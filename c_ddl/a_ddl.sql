@@ -22,15 +22,15 @@ commit;
 
 select * from ddl_dept;
 
--- CREATE TABLE ddl_emp (
---     emp_id INT AUTO_INCREMENT PRIMARY KEY,
---     emp_name VARCHAR(50) NOT NULL,
---     age INT CHECK (age >= 0),
---     emp_no VARCHAR(15) UNIQUE,
---     hire_date TIMESTAMP DEFAULT NOW(),
---     dept_code CHAR(3),
---     FOREIGN KEY (dept_code) REFERENCES ddl_dept(dept_code)
--- );
+ CREATE TABLE ddl_emp (
+     emp_id INT AUTO_INCREMENT PRIMARY KEY,
+     emp_name VARCHAR(50) NOT NULL,
+     age INT CHECK (age >= 0),
+     emp_no VARCHAR(15) UNIQUE,
+     hire_date TIMESTAMP DEFAULT NOW(),
+     dept_code CHAR(3),
+     FOREIGN KEY (dept_code) REFERENCES ddl_dept(dept_code)
+ );
 
 create table ddl_emp(
 	-- primary key (기본키)
